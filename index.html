@@ -1,42 +1,63 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Teste de Conhecimento em Algoritimos</title>
-  </head>
-  <body>
-    <p> <strong>Prova Algoritmos</strong> <strong></strong> </p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste algoritmos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz de lógica e algoritimos</h1>
+    </header>
+    <main>
+        <div class="question-container">
+            <h2>Pergunta 1</h2>
+            <p>Qual é a capital do Brasil?</p>
+            <ul>
+                <li>
+                    <input type="radio" id="option1" name="question1">
+                    <label for="option1">Rio de Janeiro</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="question1">
+                    <label for="option2">São Paulo</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="question1">
+                    <label for="option3">Brasília</label>
+                </li>
+            </ul>
+            <button class="check-answer" onclick="checkAnswer('question1', 3)">Verificar resposta</button>
+            <div class="answer-container">
+                <p class="answer">A resposta certa é: Brasília</p>
+            </div>
+        </div>
 
+        <div class="question-container">
+            <h2>Pergunta 2</h2>
+            <p>Qual é o planeta mais próximo do Sol?</p>
+            <ul>
+                <li>
+                    <input type="radio" id="option4" name="question2">
+                    <label for="option4">Terra</label>
+                </li>
+                <li>
+                    <input type="radio" id="option5" name="question2">
+                    <label for="option5">Marte</label>
+                </li>
+                <li>
+                    <input type="radio" id="option6" name="question2">
+                    <label for="option6">Mercúrio</label>
+                </li>
+            </ul>
+            <button class="check-answer" onclick="checkAnswer('question2', 6)">Verificar resposta</button>
+            <div class="answer-container">
+                <p class="answer">A resposta certa é: Mercúrio</p>
+            </div>
+        </div>
+    </main>
 
-  </body>
-  <script>
-
-console.log("Oi Polly")
-
-    var a = false 
-    var b = true 
-    var c = false 
-
-    if(a){
-        console.log("C1")
-    }else{
-        console.log("1 - entrou no else do A ===")
-        if(b){
-            console.log("2 - entrou no if do B ===")
-            if (c){
-                console.log("C2")
-            }else{
-                console.log("3 - entrou no else do C ===")
-                console.log("C3")
-                console.log("C4")
-            }
-        }else{
-            console.log("C5")
-        }
-    }
-
-    console.log("C6")
-
-
-</script>
+    <script src="script.js"></script>
+</body>
 </html>
-

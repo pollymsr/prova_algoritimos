@@ -1,0 +1,83 @@
+/* CSS (em style.css) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9c0c0; /* Fundo rosa */
+}
+
+header {
+    background-color: #d32590;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.question-container {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.question-container h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.check-answer {
+    background-color: #d32590;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.check-answer:hover {
+    background-color: #c91cc0b4;
+}
+
+.answer-container {
+    display: none;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.answer {
+    font-weight: bold;
+    color: #058f00;
+}
+
