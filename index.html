@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste algoritmos</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Quiz de lógica e algoritimos</h1>
@@ -13,51 +15,239 @@
     <main>
         <div class="question-container">
             <h2>Pergunta 1</h2>
-            <p>Qual é a capital do Brasil?</p>
+            <p> Se a = false | b = true | c = false </p>
+            <p> O que seria "printado" nas seguinte expressão: </p>
+            <img src="img/pergunta1.png">
             <ul>
                 <li>
-                    <input type="radio" id="option1" name="question1">
-                    <label for="option1">Rio de Janeiro</label>
+                    <input type="radio" id="option1a" name="question1">
+                    <label for="option1a"> C1, C2, C3</label>
                 </li>
                 <li>
-                    <input type="radio" id="option2" name="question1">
-                    <label for="option2">São Paulo</label>
+                    <input type="radio" id="option2a" name="question1">
+                    <label for="option2a">C2, C3, C4</label>
                 </li>
                 <li>
-                    <input type="radio" id="option3" name="question1">
-                    <label for="option3">Brasília</label>
+                    <input type="radio" id="option3a" name="question1">
+                    <label for="option3a">C2, C3, C5</label>
                 </li>
             </ul>
             <button class="check-answer" onclick="checkAnswer('question1', 3)">Verificar resposta</button>
+            <div class="answer-container">
+                <p class="answer">A resposta certa é: C2, C3</p>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <h2>Pergunta 2</h2>
+            <p>Qual é a capital do Brasil?</p>
+            <ul>
+                <li>
+                    <input type="radio" id="option1b" name="question2">
+                    <label for="option1b">Rio de Janeiro</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2b" name="question2">
+                    <label for="option2b">São Paulo</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3b" name="question2">
+                    <label for="option3b">Brasília</label>
+                </li>
+            </ul>
+            <button class="check-answer" onclick="checkAnswer('question2', 6)">Verificar resposta</button>
             <div class="answer-container">
                 <p class="answer">A resposta certa é: Brasília</p>
             </div>
         </div>
 
         <div class="question-container">
-            <h2>Pergunta 2</h2>
+            <h2>Pergunta 3</h2>
+            <p>Qual é a capital do Brasil?</p>
+            <ul>
+                <li>
+                    <input type="radio" id="option1c" name="question3">
+                    <label for="option1c">Rio de Janeiro</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2c" name="question3">
+                    <label for="option2c">São Paulo</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3c" name="question3">
+                    <label for="option3c">Brasília</label>
+                </li>
+            </ul>
+            <button class="check-answer" onclick="checkAnswer('question3', 3)">Verificar resposta</button>
+            <div class="answer-container">
+                <p class="answer">A resposta certa é: Brasília</p>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <h2>Pergunta 4</h2>
+            <p>Qual é a capital do Brasil?</p>
+            <ul>
+                <li>
+                    <input type="radio" id="option1d" name="question4">
+                    <label for="option1d">Rio de Janeiro</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2d" name="question4">
+                    <label for="option2d">São Paulo</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3d" name="question4">
+                    <label for="option3d">Brasília</label>
+                </li>
+            </ul>
+            <button class="check-answer" onclick="checkAnswer('question4', 3)">Verificar resposta</button>
+            <div class="answer-container">
+                <p class="answer">A resposta certa é: Brasília</p>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <h2>Pergunta 5</h2>
+            <p>Qual é a capital do Brasil?</p>
+            <ul>
+                <li>
+                    <input type="radio" id="option1e" name="question5">
+                    <label for="option1e">Rio de Janeiro</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2e" name="question5">
+                    <label for="option2e">São Paulo</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3e" name="question5">
+                    <label for="option3e">Brasília</label>
+                </li>
+            </ul>
+            <button class="check-answer" onclick="checkAnswer('question5', 3)">Verificar resposta</button>
+            <div class="answer-container">
+                <p class="answer">A resposta certa é: Brasília</p>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <h2>Pergunta 6</h2>
             <p>Qual é o planeta mais próximo do Sol?</p>
             <ul>
                 <li>
-                    <input type="radio" id="option4" name="question2">
-                    <label for="option4">Terra</label>
+                    <input type="radio" id="option4f" name="question6">
+                    <label for="option4f">Terra</label>
                 </li>
                 <li>
-                    <input type="radio" id="option5" name="question2">
-                    <label for="option5">Marte</label>
+                    <input type="radio" id="option5f" name="question6">
+                    <label for="option5f">Marte</label>
                 </li>
                 <li>
-                    <input type="radio" id="option6" name="question2">
-                    <label for="option6">Mercúrio</label>
+                    <input type="radio" id="option6f" name="question6">
+                    <label for="option6f">Mercúrio</label>
                 </li>
             </ul>
-            <button class="check-answer" onclick="checkAnswer('question2', 6)">Verificar resposta</button>
+            <button class="check-answer" onclick="checkAnswer('question6', 3)">Verificar resposta</button>
             <div class="answer-container">
                 <p class="answer">A resposta certa é: Mercúrio</p>
             </div>
         </div>
+
+        <div class="question-container">
+            <h2>Pergunta 7</h2>
+            <p>Qual é a capital do Brasil?</p>
+            <ul>
+                <li>
+                    <input type="radio" id="option1g" name="question7">
+                    <label for="option1g">Rio de Janeiro</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2g" name="question7">
+                    <label for="option2g">São Paulo</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3g" name="question7">
+                    <label for="option3g">Brasília</label>
+                </li>
+            </ul>
+            <button class="check-answer" onclick="checkAnswer('question7', 3)">Verificar resposta</button>
+            <div class="answer-container">
+                <p class="answer">A resposta certa é: Brasília</p>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <h2>Pergunta 8</h2>
+            <p>Qual é a capital do Brasil?</p>
+            <ul>
+                <li>
+                    <input type="radio" id="option1h" name="question8">
+                    <label for="option1h">Rio de Janeiro</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2h" name="question8">
+                    <label for="option2h">São Paulo</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3h" name="question8">
+                    <label for="option3h">Brasília</label>
+                </li>
+            </ul>
+            <button class="check-answer" onclick="checkAnswer('question8', 3)">Verificar resposta</button>
+            <div class="answer-container">
+                <p class="answer">A resposta certa é: Brasília</p>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <h2>Pergunta 9</h2>
+            <p>Qual é a capital do Brasil?</p>
+            <ul>
+                <li>
+                    <input type="radio" id="option1i" name="question9">
+                    <label for="option1i">Rio de Janeiro</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2i" name="question9">
+                    <label for="option2i">São Paulo</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3i" name="question9">
+                    <label for="option3i">Brasília</label>
+                </li>
+            </ul>
+            <button class="check-answer" onclick="checkAnswer('question9', 3)">Verificar resposta</button>
+            <div class="answer-container">
+                <p class="answer">A resposta certa é: Brasília</p>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <h2>Pergunta 10</h2>
+            <p>Qual é a capital do Brasil?</p>
+            <ul>
+                <li>
+                    <input type="radio" id="option1j" name="question10">
+                    <label for="option1j">Rio de Janeiro</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2j" name="question10">
+                    <label for="option2j">São Paulo</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3j" name="question10">
+                    <label for="option3j">Brasília</label>
+                </li>
+            </ul>
+            <button class="check-answer" onclick="checkAnswer('question10', 3)">Verificar resposta</button>
+            <div class="answer-container">
+                <p class="answer">A resposta certa é: Brasília</p>
+            </div>
+        </div>
+
     </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>
