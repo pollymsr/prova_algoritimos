@@ -1,4 +1,4 @@
-function checkAnswer(questionName, correctOptionId) {
+function checkAnswer(questionName) {
     const questionOptions = document.getElementsByName(questionName);
     const answerContainer = questionOptions[0].closest('.question-container').querySelector('.answer-container');
     let selectedOption = null;
@@ -9,7 +9,6 @@ function checkAnswer(questionName, correctOptionId) {
             selectedOption = option;
         }
     });
-
 
     if (selectedOption) {
         answerContainer.style.display = 'block';
@@ -39,24 +38,33 @@ document.getElementById('check-all-answers').addEventListener('click', checkAllA
 
 
 function checkAllAnswers() {
+    let correctAnswers = 0;
     for (let i = 1; i <= 10; i++) {
-        const questionContainer = document.getElementById(`question-${i}`);
-        const answerContainer = document.getElementById(`answer-${i}`);
-        const correctAnswer = getCorrectAnswer(i);
-        const selectedOption = questionContainer.querySelector(`input[name="question-${i}"]:checked`);
-
-        if (selectedOption) {
-
-            if (selectedOption.value === correctAnswer) {
-                answerContainer.textContent = 'Resposta correta!';
-                answerContainer.style.color = 'green';
-            } else {
-                answerContainer.textContent = 'Resposta errada.';
-                answerContainer.style.color = 'red';
-            }
+      const questionContainer = document.getElementById(`question-${i}`);
+      const answerContainer = document.getElementById(`answer-${i}`);
+      const correctAnswer = getCorrectAnswer(i);
+      const selectedOption = questionContainer.querySelector(`input[name="question-${i}"]:checked`);
+  
+      if (selectedOption) {
+        if (selectedOption.value === correctAnswer) {
+          answerContainer.textContent = 'Resposta correta!';
+          answerContainer.style.color = 'green';
+          correctAnswers++;
         } else {
-            answerContainer.textContent = 'Nenhuma resposta selecionada.';
-            answerContainer.style.color = 'orange';
+          answerContainer.textContent = 'Resposta errada.';
+          answerContainer.style.color = 'Red';
         }
+      } else {
+        answerContainer.textContent = 'Nenhuma resposta selecionada.';
+        answerContainer.style.color = 'orange';
+      }
     }
-}
+  
+    const scoreQuantity = `${correctAnswers}/10`;
+    const scorePercentage = `${(correctAnswers / 10) * 100}%`;
+  
+    document.getElementById('score-quantity').textContent = scoreQuantity;
+    document.getElementById('score-percentage').textContent = scorePercentage;
+  
+    document.querySelector('.score-container').classList.remove('hidden');
+  }
