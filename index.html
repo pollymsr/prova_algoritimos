@@ -10,244 +10,258 @@
 
 <body>
     <header>
-        <h1>Quiz de lógica e algoritimos</h1>
+        <h1>Quiz de lógica e algoritmos</h1>
     </header>
     <main>
-        <div class="question-container">
+        <div class="question-container" id="question-1">
             <h2>Pergunta 1</h2>
-            <p> Se a = false | b = true | c = false </p>
-            <p> O que seria "printado" nas seguinte expressão: </p>
+            <p>Se a = false | b = true | c = false</p>
+            <p>O que seria "printado" na seguinte expressão:</p>
             <img src="img/pergunta1.png">
             <ul>
                 <li>
-                    <input type="radio" id="option1a" name="question1">
-                    <label for="option1a"> C1, C2, C3</label>
+                    <input type="radio" id="question-1-option-1" name="question-1" value="C1, C2, C3">
+                    <label for="question-1-option-1">C1, C2, C3</label>
                 </li>
                 <li>
-                    <input type="radio" id="option2a" name="question1">
-                    <label for="option2a">C2, C3, C4</label>
+                    <input type="radio" id="question-1-option-2" name="question-1" value="C3, C4, C6">
+                    <label for="question-1-option-2">C3, C4, C6</label>
                 </li>
                 <li>
-                    <input type="radio" id="option3a" name="question1">
-                    <label for="option3a">C2, C3, C5</label>
+                    <input type="radio" id="question-1-option-3" name="question-1" value="C2, C3, C5">
+                    <label for="question-1-option-3">C2, C3, C5</label>
                 </li>
             </ul>
-            <button class="check-answer" onclick="checkAnswer('question1', 3)">Verificar resposta</button>
-            <div class="answer-container">
-                <p class="answer">A resposta certa é: C2, C3</p>
+            <div class="answerContainer" id="answer-1">
             </div>
         </div>
 
-        <div class="question-container">
+        <div class="question-container" id="question-2">
             <h2>Pergunta 2</h2>
-            <p>Qual é a capital do Brasil?</p>
+            <p>Considerando a lista de identificadores a seguir, quantos deles são inválidos?</p>
+            <p> - BJ153</p>
+            <p> - K7</p>
+            <p> - NOTA/2</p>
+            <p> - AWQ*</p>
+            <p> - P&AA</p>
+            <p> - INP5</p>
+            <p> - 5X</p>
             <ul>
                 <li>
-                    <input type="radio" id="option1b" name="question2">
-                    <label for="option1b">Rio de Janeiro</label>
+                    <input type="radio" id="question-2-option-1" name="question-2" value="4">
+                    <label for="question-2-option-1">4</label>
                 </li>
                 <li>
-                    <input type="radio" id="option2b" name="question2">
-                    <label for="option2b">São Paulo</label>
+                    <input type="radio" id="question-2-option-2" name="question-2" value="7">
+                    <label for="question-2-option-2">7</label>
                 </li>
                 <li>
-                    <input type="radio" id="option3b" name="question2">
-                    <label for="option3b">Brasília</label>
+                    <input type="radio" id="question-2-option-3" name="question-2" value="6">
+                    <label for="question-2-option-3">6</label>
                 </li>
             </ul>
-            <button class="check-answer" onclick="checkAnswer('question2', 6)">Verificar resposta</button>
-            <div class="answer-container">
-                <p class="answer">A resposta certa é: Brasília</p>
+            <div class="answerContainer" id="answer-2">
+                <p></p>
             </div>
         </div>
 
-        <div class="question-container">
+        <div class="question-container" id="question-3">
             <h2>Pergunta 3</h2>
-            <p>Qual é a capital do Brasil?</p>
+            <p>Considerando a estrutura TABELA [1..8, 1..5], assinale a afirmativa correta:</p>
             <ul>
                 <li>
-                    <input type="radio" id="option1c" name="question3">
-                    <label for="option1c">Rio de Janeiro</label>
+                    <input type="radio" id="question-3-option-1" name="question-3" value="A matriz tem 5 linhas, 8 colunas e 40 elementos;">
+                    <label for="question-3-option-1">A matriz tem 5 linhas, 8 colunas e 40 elementos;</label>
                 </li>
                 <li>
-                    <input type="radio" id="option2c" name="question3">
-                    <label for="option2c">São Paulo</label>
+                    <input type="radio" id="question-3-option-2" name="question-3" value="A matriz tem 5 linhas, 8 colunas e podem ser armazenados até 40 elementos;">
+                    <label for="question-3-option-2">A matriz tem 5 linhas, 8 colunas e podem ser armazenados até 40 elementos;</label>
                 </li>
                 <li>
-                    <input type="radio" id="option3c" name="question3">
-                    <label for="option3c">Brasília</label>
+                    <input type="radio" id="question-3-option-3" name="question-3" value="A matriz tem 8 linhas, 5 colunas e podem ser armazenados até 40 elementos;">
+                    <label for="question-3-option-3">A matriz tem 8 linhas, 5 colunas e podem ser armazenados até 40 elementos;</label>
                 </li>
             </ul>
-            <button class="check-answer" onclick="checkAnswer('question3', 3)">Verificar resposta</button>
-            <div class="answer-container">
-                <p class="answer">A resposta certa é: Brasília</p>
+            <div class="answerContainer" id="answer-3">
+                <p></p>
             </div>
         </div>
 
-        <div class="question-container">
+        <div class="question-container" id="question-4">
             <h2>Pergunta 4</h2>
-            <p>Qual é a capital do Brasil?</p>
+            <p>A execução de uma expressão lógica obedece como prioridade a ordem dos operadores:</p>
             <ul>
                 <li>
-                    <input type="radio" id="option1d" name="question4">
-                    <label for="option1d">Rio de Janeiro</label>
+                    <input type="radio" id="question-4-option-1" name="question-4" value="OU / E / NÃO">
+                    <label for="question-4-option-1">OU / E / NÃO</label>
                 </li>
                 <li>
-                    <input type="radio" id="option2d" name="question4">
-                    <label for="option2d">São Paulo</label>
+                    <input type="radio" id="question-4-option-2" name="question-4" value="NÃO / E / OU">
+                    <label for="question-4-option-2">NÃO / E / OU</label>
                 </li>
                 <li>
-                    <input type="radio" id="option3d" name="question4">
-                    <label for="option3d">Brasília</label>
+                    <input type="radio" id="question-4-option-3" name="question-4" value="NÃO / OU / E">
+                    <label for="question-4-option-3">NÃO / OU / E</label>
                 </li>
             </ul>
-            <button class="check-answer" onclick="checkAnswer('question4', 3)">Verificar resposta</button>
-            <div class="answer-container">
-                <p class="answer">A resposta certa é: Brasília</p>
+            <div class="answerContainer"id="answer-4">
+                <p></p>
             </div>
         </div>
 
-        <div class="question-container">
+        <div class="question-container" id="question-5">
             <h2>Pergunta 5</h2>
-            <p>Qual é a capital do Brasil?</p>
+            <p>Assinale a alternativa que contenha somente nomes válidos para variáveis:</p>
             <ul>
                 <li>
-                    <input type="radio" id="option1e" name="question5">
-                    <label for="option1e">Rio de Janeiro</label>
+                    <input type="radio" id="question-5-option-1" name="question-5" value="salário, preço, r$">
+                    <label for="question-5-option-1">salário, preço, r$</label>
                 </li>
                 <li>
-                    <input type="radio" id="option2e" name="question5">
-                    <label for="option2e">São Paulo</label>
+                    <input type="radio" id="question-5-option-2" name="question-5" value="índice, #pagina, contexto">
+                    <label for="question-5-option-2">índice, #pagina, contexto</label>
                 </li>
                 <li>
-                    <input type="radio" id="option3e" name="question5">
-                    <label for="option3e">Brasília</label>
+                    <input type="radio" id="question-5-option-3" name="question-5" value="nome1, sobrenome2, senha3">
+                    <label for="question-5-option-3">nome1, sobrenome2, senha3</label>
                 </li>
             </ul>
-            <button class="check-answer" onclick="checkAnswer('question5', 3)">Verificar resposta</button>
-            <div class="answer-container">
-                <p class="answer">A resposta certa é: Brasília</p>
+            <div class="answerContainer"id="answer-5">
+                <p></p>
             </div>
         </div>
 
-        <div class="question-container">
+        <div class="question-container" id="question-6">
             <h2>Pergunta 6</h2>
-            <p>Qual é o planeta mais próximo do Sol?</p>
+            <p>Analise as alternativas abaixo, e informe quais as afirmativas corretas:</p>
+            <p>I – Toda variável do tipo real tem a possibilidade de receber valores inteiros;</p>
+            <p>II – As variáveis do tipo Lógico aceitam valores falsos e verdadeiros;</p>
+            <p>III – Variáveis do tipo caracter, são caracterizados por sequências de números, letras, símbolos e devem ser indicados em ter aspas;</p>
+            <p>IV – O nome de uma variável poderá possuir espaços em branco;</p>
             <ul>
                 <li>
-                    <input type="radio" id="option4f" name="question6">
-                    <label for="option4f">Terra</label>
+                    <input type="radio" id="question-6-option-1" name="question-6" value="I, II, III, IV">
+                    <label for="question-6-option-1">I, II, III, IV</label>
                 </li>
                 <li>
-                    <input type="radio" id="option5f" name="question6">
-                    <label for="option5f">Marte</label>
+                    <input type="radio" id="question-6-option-2" name="question-6" value="II, III">
+                    <label for="question-6-option-2">II, III</label>
                 </li>
                 <li>
-                    <input type="radio" id="option6f" name="question6">
-                    <label for="option6f">Mercúrio</label>
+                    <input type="radio" id="question-6-option-3" name="question-6" value="I, II, III">
+                    <label for="question-6-option-3">I, II, III</label>
                 </li>
             </ul>
-            <button class="check-answer" onclick="checkAnswer('question6', 3)">Verificar resposta</button>
-            <div class="answer-container">
-                <p class="answer">A resposta certa é: Mercúrio</p>
+            <div class="answerContainer" id="answer-6">
+                <p></p>
             </div>
         </div>
 
-        <div class="question-container">
+        <div class="question-container" id="question-7">
             <h2>Pergunta 7</h2>
-            <p>Qual é a capital do Brasil?</p>
+            <p>Associe os números aos parênteses, marcando a opção onde aparece a sequência correta:</p>
+            <p>1 - Desvio condicional simples
+            <p>2 - Desvio condicional composto</p>
+            <p>3 - Repetição com teste no início</p>
+            <p>4 - Repetição com teste no fim</p>
+            <p>5 - Repetição com variável de controle</p>
+            <p>( ) Enquanto.. faça</p>
+            <p>( ) Se.. então</p>
+            <p>( ) Repita.. até</p>
+            <p>( ) Para</p>
+            <p>( ) Se.. então.. senão</p>
             <ul>
                 <li>
-                    <input type="radio" id="option1g" name="question7">
-                    <label for="option1g">Rio de Janeiro</label>
+                    <input type="radio" id="question-7-option-1" name="question-7" value="3 1 4 5 2">
+                    <label for="question-7-option-1">3 1 4 5 2</label>
                 </li>
                 <li>
-                    <input type="radio" id="option2g" name="question7">
-                    <label for="option2g">São Paulo</label>
+                    <input type="radio" id="question-7-option-2" name="question-7" value="1 5 2 3 4">
+                    <label for="question-7-option-2">1 5 2 3 4</label>
                 </li>
                 <li>
-                    <input type="radio" id="option3g" name="question7">
-                    <label for="option3g">Brasília</label>
+                    <input type="radio" id="question-7-option-3" name="question-7" value="1 2 3 4 5">
+                    <label for="question-7-option-3">1 2 3 4 5</label>
                 </li>
             </ul>
-            <button class="check-answer" onclick="checkAnswer('question7', 3)">Verificar resposta</button>
-            <div class="answer-container">
-                <p class="answer">A resposta certa é: Brasília</p>
+            <div class="answerContainer" id="answer-7">
+                <p></p>
             </div>
         </div>
 
-        <div class="question-container">
+        <div class="question-container" id="question-8">
             <h2>Pergunta 8</h2>
-            <p>Qual é a capital do Brasil?</p>
+            <p>Assinale a alternativa correta sobre as estruturas de controle do tipo laços ou malhas de repetição. </p>
             <ul>
                 <li>
-                    <input type="radio" id="option1h" name="question8">
-                    <label for="option1h">Rio de Janeiro</label>
+                    <input type="radio" id="question-8-option-1" name="question-8" value="Laços de repetição são utilizados quando é necessário efetuar a repetição de um trecho de programa um determinado número de vezes.">
+                    <label for="question-8-option-1">Laços de repetição são utilizados quando é necessário efetuar a repetição de um trecho de programa um determinado número de vezes.</label>
                 </li>
                 <li>
-                    <input type="radio" id="option2h" name="question8">
-                    <label for="option2h">São Paulo</label>
+                    <input type="radio" id="question-8-option-2" name="question-8" value="Não existem estruturas de controle do tipo malha de repetição que execute um teste lógico no final do looping.">
+                    <label for="question-8-option-2">Não existem estruturas de controle do tipo malha de repetição que execute um teste lógico no final do looping.</label>
                 </li>
                 <li>
-                    <input type="radio" id="option3h" name="question8">
-                    <label for="option3h">Brasília</label>
+                    <input type="radio" id="question-8-option-3" name="question-8" value="Se.. então é um exemplo de estrutura de controle do tipo laço de repetição">
+                    <label for="question-8-option-3">Se.. então é um exemplo de estrutura de controle do tipo laço de repetição</label>
                 </li>
             </ul>
-            <button class="check-answer" onclick="checkAnswer('question8', 3)">Verificar resposta</button>
-            <div class="answer-container">
-                <p class="answer">A resposta certa é: Brasília</p>
+            <div class="answerContainer" id="answer-8">
+                <p></p>
             </div>
         </div>
 
-        <div class="question-container">
+        <div class="question-container" id="question-9">
             <h2>Pergunta 9</h2>
-            <p>Qual é a capital do Brasil?</p>
+            <img src="img/pergunta9.png">
+            <p>Após a execução, a quantidade de vezes que a variável Y
+                será impressa é igual a:</p>
             <ul>
                 <li>
-                    <input type="radio" id="option1i" name="question9">
-                    <label for="option1i">Rio de Janeiro</label>
+                    <input type="radio" id="question-9-option-1" name="question-9" value="2">
+                    <label for="question-9-option-1">2</label>
                 </li>
                 <li>
-                    <input type="radio" id="option2i" name="question9">
-                    <label for="option2i">São Paulo</label>
+                    <input type="radio" id="question-9-option-2" name="question-9" value="0">
+                    <label for="question-9-option-2">0</label>
                 </li>
                 <li>
-                    <input type="radio" id="option3i" name="question9">
-                    <label for="option3i">Brasília</label>
+                    <input type="radio" id="question-9-option-3" name="question-9" value="1">
+                    <label for="question-9-option-3">1</label>
                 </li>
             </ul>
-            <button class="check-answer" onclick="checkAnswer('question9', 3)">Verificar resposta</button>
-            <div class="answer-container">
-                <p class="answer">A resposta certa é: Brasília</p>
+            <div class="answerContainer" id="answer-9">
+                <p></p>
             </div>
         </div>
 
-        <div class="question-container">
+        <div class="question-container" id="question-10">
             <h2>Pergunta 10</h2>
-            <p>Qual é a capital do Brasil?</p>
+            <p>Considere o seguinte algoritmo:</p>
+            <img src="img/pergunta10.png">
+            <p>Marque a seguir a única opção que corresponde ao que será exibido na tela após a execução das instruções acima: 0</p>
             <ul>
                 <li>
-                    <input type="radio" id="option1j" name="question10">
-                    <label for="option1j">Rio de Janeiro</label>
+                    <input type="radio" id="question-10-option-1" name="question-10" value="2">
+                    <label for="question-10-option-1">2</label>
                 </li>
                 <li>
-                    <input type="radio" id="option2j" name="question10">
-                    <label for="option2j">São Paulo</label>
+                    <input type="radio" id="question-10-option-2" name="question-10" value="5">
+                    <label for="question-10-option-2">5</label>
                 </li>
                 <li>
-                    <input type="radio" id="option3j" name="question10">
-                    <label for="option3j">Brasília</label>
+                    <input type="radio" id="question-10-option-3" name="question-10" value="0">
+                    <label for="question-10-option-3">0</label>
                 </li>
             </ul>
-            <button class="check-answer" onclick="checkAnswer('question10', 3)">Verificar resposta</button>
-            <div class="answer-container">
-                <p class="answer">A resposta certa é: Brasília</p>
+            <div class="answerContainer" id="answer-10">
+                <p></p>
             </div>
         </div>
-
+        <div class="respostas">
+            <button id="check-all-answers">Verificar todas as respostas</button>
+        </div>
     </main>
-
     <script src="script.js"></script>
 </body>
-
 </html>
